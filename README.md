@@ -1,0 +1,1 @@
+Yet another ecology simulator, written together with ChatGPT3.5, to experiment with AI emerging behaviors
