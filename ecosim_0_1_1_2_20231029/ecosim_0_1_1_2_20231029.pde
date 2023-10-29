@@ -33,7 +33,7 @@ ArrayList<Veg> vegetals;
   agentColor
 */
 //boolean fullscreen = false;
-boolean fullscreen = true;
+boolean fullscreen = true; //<>//
 int viewWidth = 2000;
 int viewHeight = 1000;
 
@@ -75,8 +75,8 @@ float carnStartAmtPct = 0.002;                         //  0.2%
 
 /*  ___MAIN___
 */
-void settings() {
-  if (fullscreen) {
+void settings() { //<>//
+  if (fullscreen) { //<>//
     //size(displayWidth, displayHeight);
     fullScreen();
   } else {
@@ -88,8 +88,8 @@ void settings() {
   agentMaxCells = floor((width * height) / vegCellSize / vegCellSize);
 }
 
-void setup() {
-  herbivores = new ArrayList<Herb>();
+void setup() { //<>//
+  herbivores = new ArrayList<Herb>(); //<>//
   carnivores = new ArrayList<Carn>();
   vegetals = new ArrayList<Veg>();
 
@@ -119,24 +119,24 @@ void setup() {
   }
 }
 
-void draw() {
+void draw() { //<>//
   //background(255);
   background(0);
   
   // Move and display herbivores
-  for (Herb herb : herbivores) {
+  for (Herb herb : herbivores) { //<>//
     herb.move();
     herb.display(herbColor);
   }
 
   // Move and display carnivores
-  for (Carn carn : carnivores) {
+  for (Carn carn : carnivores) { //<>//
     carn.move();
     carn.display(carnColor);
   }
 
   // Display vegetal resources
-  for (Veg veg : vegetals) {
+  for (Veg veg : vegetals) { //<>//
     veg.display(vegColor);
   }
 }
